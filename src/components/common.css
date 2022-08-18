@@ -1,0 +1,276 @@
+/* Header CSS  */
+.header_wrapper {
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-width: min-content;
+    background-color: #202124;
+}
+.header_left_block {
+    display: flex;
+    align-items: center;
+    padding-right: 140px;
+}
+.header_logo a {
+    display: flex;
+    text-decoration: unset;
+    align-items: center;
+}
+.header_logo a span {
+    padding-left: 4px;
+    display: inline-block;
+    color: #fff;
+    font-size: 22px;
+    padding-left: 8px;
+    position: relative;
+    vertical-align: middle;
+}
+.humberger_menu {
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 4px;
+    transition: all 0.5s;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 34px;
+    width: 34px;
+    flex: 0 0 auto;
+    padding: 5px;
+}
+.humberger_menu:hover {
+    background-color: #34363a;
+}
+.searchbox_wrapper {
+    min-width: 720px;
+}
+.searchbox_block {
+    display: flex;
+    align-items: center;
+    background: rgba(241, 243, 244, .24);
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-right: auto;
+    position: relative;
+    -webkit-transition: background 100ms ease-in, width 100ms ease-out;
+    transition: background 100ms ease-in, width 100ms ease-out;
+}
+.search_icon_btn:hover .hover_block,
+.clear_btn:hover .hover_block {
+    background-color: #34363a;
+}
+.hover_block {
+    transition: all 0.5s;
+    border-radius: 100px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_icon_btn,
+.clear_btn {
+    padding: 0 5px;
+    background: transparent;
+    border: unset;
+    cursor: pointer;
+}
+.clear_btn_icon,
+.search_icon {
+    padding: 2px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_input_box {
+    width: 100%;
+    height: 46px;
+    padding: 0;
+    margin-right: 50px;
+    overflow: hidden;
+}
+.search_input_box input {
+    background: transparent;
+    color: #fff;
+    border: none;
+    height: 46px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+.search_input_box input::placeholder {
+    color: #fff;
+    font-weight: 500;
+}
+.tools_block {
+    display: flex;
+    align-items: center;
+}
+.header_right_block {
+    margin-left: auto;
+}
+.setting_btn,
+.layout_btn,
+.refresh_btn {
+    width: 48px;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+}
+.setting_btn button svg,
+.layout_btn button svg,
+.refresh_btn button svg {
+    opacity: 0.5;
+}
+.setting_btn button:hover svg,
+.layout_btn button:hover svg,
+.refresh_btn button:hover svg {
+    opacity: 1;
+}
+.setting_btn button, .layout_btn button, .refresh_btn button {
+    background-color: transparent;
+    border: unset;
+    width: 40px;
+    border-radius: 100px;
+    padding: 6px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.setting_btn button:hover,
+.layout_btn button:hover,
+.refresh_btn button:hover {
+    background-color: #34363a;
+    cursor: pointer;
+}
+.ant-dropdown-menu-item,
+.ant-dropdown-menu-submenu-title {
+    color: #fff;
+}
+.ant-dropdown {
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 33%);
+}
+.ant-dropdown-menu-item:hover {
+    background-color: #34363a;
+}
+.ant-dropdown-menu {
+    background-color: #202124;
+}
+/* Sidebar CSS */
+.slidebar_inner {
+    background: transparent;
+    min-width: 280px;
+    position: relative;
+    width: 100%;
+}
+.slidebar_inner ul {
+    padding: 0;
+    padding-top: 10px;
+}
+.slidebar_inner ul li.active {
+    background-color: #41331c;
+}
+.slidebar_inner ul li.active:hover {
+    background-color: #41331c;
+}
+.slidebar_inner ul li {
+    margin: 0 0 3px;
+    border-radius: 0 50px 50px 0;
+}
+.slidebar_inner ul li:hover {
+    background-color: rgb(82 83 85 / 15%);
+}
+.slidebar_inner ul li a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 15px;
+}
+.slidebar_inner ul li a svg {
+    opacity: 0.5;
+}
+.slidebar_inner ul li a.active svg {
+    opacity: 1;
+}
+.slidebar_inner ul li a span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 20px;
+    transition: cubic-bezier(0.25, 0.46, 0.45, 0.94)0.4s;
+}
+.main_wrapper.close .slidebar_inner {
+    min-width: 100%;
+    width: 55px;
+}
+.main_wrapper.close .slidebar_inner ul li a span {
+    position: absolute;
+    z-index: -110;
+    opacity: 0;
+}
+
+/* Modal */
+.edit_label_modal .modal-dialog{
+    max-width: 310px;
+}
+.edit_label_modal .modal-content{
+    border-radius: 0;
+    background-color: #34363a;
+    color: #fff;
+}
+.edit_label_modal .modal-header{
+    border-bottom: 0;
+}
+.edit_label_modal .modal-footer{
+    border-color: #505256;
+}
+
+.edit_label_modal .donebtn{
+    background-color: transparent;
+    border: unset;
+    padding: 5px 10px;
+}
+.edit_label_modal .donebtn:hover{
+    background-color: rgba(102, 106, 115, 0.29);
+}
+.edit_label_inner .edit_block{
+    display: flex;
+    text-align: center;
+}
+.edit_label_modal .modal-body{
+    padding-top: 0;
+}
+.edit_label_inner input {
+    margin: 0 10px;
+    width: calc(100% - 80px);
+    background-color: transparent;
+    outline: unset;
+    border: unset;
+    padding: 3px 5px;
+    border-bottom: 1px solid transparent;
+}
+.edit_label_inner input:focus-visible{
+    border-bottom: 1px solid #505256;
+}
+.edit_label_modal .edit_label_inner .donebtn{
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}

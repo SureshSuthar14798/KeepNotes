@@ -1,0 +1,88 @@
+.playground_block {
+    height: calc(100vh - 65px);
+    background-color: #202124;
+    border-top: 1px solid #6a6a6a;
+    display: flex;
+}
+.main_block {
+    width: 100%;
+}
+.right_block_wrapper {
+    padding: 30px 20px;
+    width: 100%;
+    height: calc(100vh - 65px);
+}
+.main_block_inner h1 {
+    color: #FFF;
+}
+.empty_block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 200px;
+}
+.empty_block .image_block {
+    height: 120px;
+    margin: 20px;
+    opacity: .1;
+    width: 120px;
+}
+.empty_block .image_block svg {
+    width: 100%;
+    height: 100%;
+}
+.empty_block h3 {
+    color: #9aa0a6;
+    cursor: default;
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.75rem;
+}
+
+.take_input_box{
+    display: flex;
+    border: 1px solid #6a6a6a;
+    padding: 5px 25px;
+    max-width: 560px;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 8px 2px rgb(0 0 0 / 26%);
+}
+.take_input_box input{
+    border: unset;
+    font-size: 16px;
+    outline: unset;
+    color: #FFF;
+    width: 100%;
+    padding: 0 5px;
+    background-color: transparent;
+}
+.take_input_box .take_inputbox_btn{
+    display: flex;
+    align-items: center;
+}
+.take_input_box .take_inputbox_btn button {
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: unset;
+    margin-left: 10px;
+}
+.take_input_box .take_inputbox_btn button svg {
+    opacity: 0.5;
+}
+.take_input_box .take_inputbox_btn button:hover svg {
+    opacity: 1;
+}
+.take_input_box .take_inputbox_btn button:hover {
+    background-color: #3b3b3b;
+}
